@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Thesis | Thesis Assembly Platform</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Quill.js CSS -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark text-light py-4">
+        <div class="container">
+            <h1 class="mb-0">Thesis Assembly Platform</h1>
+            <nav>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" class="text-light">Home</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-light">About</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-light">Contact</a></li>
+                    <li class="list-inline-item"><a href="logout.html" class="text-light">Logout</a></li> <!-- Add a logout link -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <section class="text-center">
+            <h2>Create Your Thesis</h2>
+            <form action="#" method="post" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" class="form-control" id="title" name="title" required>
+                    <div class="invalid-feedback">Please enter a title for your thesis.</div>
+                </div>
+                <div class="form-group">
+                    <label for="content">Content:</label>
+                    <div id="editor"></div> <!-- Quill editor -->
+                    <input type="hidden" name="content" id="content"> <!-- Hidden input to store Quill content -->
+                </div>
+                <button type="submit" class="btn btn-primary">Create Thesis</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-dark text-light py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Thesis Assembly Platform. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS  -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.create_thesisjs.com/1.3.6/create_thesis.js"></script>
+    <script src="create_thesis-setup.js"></script>
+</body>
+</html>
+

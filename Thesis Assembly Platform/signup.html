@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Thesis Assembly Platform</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-light py-4">
+        <div class="container">
+            <h1 class="mb-0">Thesis Assembly Platform</h1>
+            <nav>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html" class="text-light">Home</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-light">About</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-light">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <section class="text-center">
+            <h2>Sign Up for Thesis Assembly Platform</h2>
+            <form action="#" method="post" class="needs-validation form-horizontal" onsubmit="return validateForm()" novalidate>
+                <!--  form fields -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+                        <div class="invalid-feedback">Please enter your first name.</div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+                        <div class="invalid-feedback">Please enter your last name.</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                        <div class="invalid-feedback">Please enter a username.</div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" id="school" name="school" placeholder="School" required>
+                        <div class="invalid-feedback">Please enter your school.</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="email" class="form-control" id="confirmEmail" name="confirmEmail" placeholder="Confirm Email" required>
+                        <div class="invalid-feedback">Please confirm your email address.</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                        <div class="invalid-feedback">Please enter a password.</div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                        <div class="invalid-feedback">Please confirm your password.</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <select title="Gender" class="form-control" id="gender" name="gender" required>
+                            <option value="">Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="invalid-feedback">Please select your gender.</div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+                        <div class="invalid-feedback">Please enter your phone number.</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <input type="number" class="form-control" id="age" name="age" placeholder="Age" required>
+                        <div class="invalid-feedback">Please enter your age.</div>
+                    </div>
+                </div>
+                <!-- ... -->
+                
+                <!-- Google reCAPTCHA -->
+               <!-- <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="#"></div>
+                </div>-->
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-dark text-light py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Thesis Assembly Platform. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* Custom styling */
+
+/* Reset default browser styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* You can adjust margins and padding as needed */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* You can adjust button styles as needed */
+button {
+    width: 100%; /* Make button full width */
+    cursor: pointer;
+}
+
+.register-link {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
